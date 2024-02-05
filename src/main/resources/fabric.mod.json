@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lophiussmod",
+	"version": "${version}",
+	"name": "Lophius'sMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Apache License 2.0",
+	"icon": "assets/lophiussmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.lophius.lophiussmod.LophiusMod"
+		],
+		"client": [
+          "net.lophius.lophiussmod.LophiusModClient"
+		],
+		"fabric-datagen": [
+			"net.lophius.lophiussmod.LophiusModDataGenerator"
+		]
+	},
+	"mixins": [
+		"lophiussmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
